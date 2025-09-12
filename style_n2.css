@@ -1,0 +1,301 @@
+@font-face {
+  font-family: LoveLetter;
+  src: url(../ressources/LoveLetter.ttf) ;
+  }
+
+body {
+  margin: auto;
+  background-image:url(/ressources/space_bg01.jpg);
+  }
+
+.title {
+  max-width: 800px;
+  margin: auto;
+  background-color: black;
+  padding: 30px;
+  z-index: 4;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 4px;    
+}
+
+.website_title {
+  font-family: LoveLetter; 
+  font-size: 100px;
+  line-height: 0px;
+  color:white;
+
+}
+
+.maincolumn {
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+  background-color: black;
+  padding: 30px;
+  z-index: 4;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 4px;    
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  max-width: 860px;
+  margin: auto;
+  margin-bottom: -2px;
+  margin-top: -2px;
+}
+/***
+.navbar ul {
+  font-family: 'LoveLetter', 'Consolas', 'Courier', 'monospace' ;
+  font-size: small;
+  color: black;
+  list-style-type: none;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+
+li {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  float: left;
+}
+
+.menulink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color:black;
+  margin: 0px;
+  padding: 12px;
+  color: white;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  transition: all 0.4s;
+}
+
+
+.menulink:hover {
+  text-decoration: none;
+  border-radius: 20px;
+  background-color:white;
+  margin: 0px;
+  padding: 12px;
+  color: black;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  transition: all 0.4s;
+}
+
+.menulink:hover:visited {
+  text-decoration: none;
+  border-radius: 12px;
+  background-color:white;
+  margin: 0px;
+  padding: 20px;
+  color: black;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  transition: color 0.5s;
+}**/
+
+.navbar ul{
+  font-family: 'LoveLetter', 'Consolas', 'Courier', 'monospace' ;
+  font-size: small;
+  color: black;
+  list-style-type: none;
+  background-color: black;
+  margin: 0px;
+  padding: 00px;
+  overflow: hidden;
+}
+
+.navbar a{
+  color: white;
+  background-color: black;
+  /*border-width: 2px;
+  border-color: white;
+  border-style: solid;*/
+  outline-width: 2px;
+  outline-color: white;
+  outline-style: solid;
+  width: 100px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.navbar a:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.4s;
+}
+
+.navbar li{
+  float: left;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  color:white;
+}
+
+.quote {
+  font-family: 'Courier New', Courier, monospace; 
+  font-style: italic;
+  font-size: 14px;
+  color:white;
+  padding-bottom: 28px;
+  padding-top: 28px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.history_illus {
+  max-width: 300px;
+  margin: auto;
+  padding-top: 28px;
+  display: block;
+}
+
+.history_caption {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 28px;
+}
+
+.method_list {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.method_title{
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 22px;
+  font-weight: bolder;
+  color:grey;
+}
+
+.manual_link {
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 22px;
+  font-weight: bolder;
+  color:grey;
+}
+
+.incoming_release {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  border-width: 1px;
+  border-color: grey;
+  border-style: dashed;
+  padding: 20px;
+}
+
+.article_text {
+  max-width: 100%;
+  padding-left: 20px;
+  position: 300px;
+}
+
+.preview_small {
+  height: 200px;
+  width: 200px;
+  margin-right: 0px;
+  padding: 0px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.titre_release {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 22px;
+  font-weight: bolder;
+  color:grey;
+}
+
+
+.artist_release {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 18px;
+  color:grey;
+}
+
+.date_release {
+font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  color:grey;
+}
+
+.description_release {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  color:white;
+  margin-top: 14px;
+}
+
+.library_table {
+  margin-top: 28px;
+}
+
+label {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  color:white;
+}
+
+th {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+td {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+table, th, td {
+  width: 800px;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+}
