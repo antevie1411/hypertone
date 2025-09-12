@@ -1,11 +1,11 @@
 @font-face {
   font-family: LoveLetter;
-  src: url(../ressources/LoveLetter.ttf) ;
+  src: url(./ressources/LoveLetter.ttf) ;
   }
 
 body {
   margin: auto;
-  background-image:url(/ressources/space_bg01.jpg);
+  background-image:url(./ressources/space_bg01.jpg);
   }
 
 .title {
@@ -298,4 +298,5 @@ footer {
 footer p {
   text-align: center;
   font-size: 10px;
+
 }
