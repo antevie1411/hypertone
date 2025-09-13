@@ -9,7 +9,7 @@
     <body>
         
         <div class="title">
-            <a href="index.html"><img src="/ressources/logo01.jpg" alt=""></a>
+            <img src="/ressources/logo01.jpg" alt="">
             <p>The fastest music in the universe.</p>
         </div>
 
@@ -39,23 +39,25 @@
             <p>Here, you will find a library of hypertone releases, both singles and albums.</p>
 
             <div class="library">
-                <input type="text" name="Search" placeholder="Search for a release here...">
-                <button type="submit" class="button-secondary">Search</button>
+                <input type="text" id="s1" name="Search" placeholder="Search for a release here...">
+		<select id="SORT"><option value="TN">SORT: Track Name</option><option value="AN">Primary Artist Name</option><option value="2N">Secondary Artist Name</option><option value="AD">Year (Oldest)</option><option value="BC">Year (Newest)</option></select>
+
+		<!--                <button type="submit" class="button-secondary">Search</button>-->
                 
                 <div>
                     <label for="singles">Singles</label>
-                    <input type="radio" id="singles" value="singles">
+                    <input type="checkbox" id="singles" value="singles" checked>
 
-                    <label for="albums">Albums</label>
-                    <input type="radio" id="albums" value="albums">
+                    <label for="albums">| Albums</label>
+                    <input type="checkbox" id="albums" value="albums" checked>
 
-                    <label for="eps">EPs</label>
-                    <input type="radio" id="eps" value="eps">
+                    <label for="eps">| EPs</label>
+                    <input type="checkbox" id="eps" value="eps" checked>
                 </div>
 
                 <div class="library_table">
                     
-                    <table>
+         <!--           <table>
                         <tr>
                             <th>Artist</th>
                             <th>Track</th>
@@ -84,10 +86,10 @@
                             <td>Album</td>
                         </tr>
 
-                    </table>
+			</table>-->
 
-                    <!-- <div id="display-names"></div>
-                    <script src="library.js"></script> -->
+                    <div id="display-names"></div>
+                    <script src="notalibrary.js"></script>
                 
                 </div>
                 
