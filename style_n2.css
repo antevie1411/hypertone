@@ -3,10 +3,15 @@
   src: url(./ressources/LoveLetter.ttf) ;
   }
 
-body {
+html {
   margin: auto;
   background-image:url(./ressources/space_bg01.jpg);
-  }
+}
+
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .title {
   max-width: 800px;
@@ -298,5 +303,4 @@ footer {
 footer p {
   text-align: center;
   font-size: 10px;
-
 }
