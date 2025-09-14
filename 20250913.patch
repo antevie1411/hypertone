@@ -1,0 +1,98 @@
+diff --git a/library.json b/library.json
+index 7fe6d79..63b75bb 100644
+--- a/library.json
++++ b/library.json
+@@ -1,15 +1,23 @@
+ [
+-    {"artist": ["Cement Tea"], "name": "Movement Speed: Slow", "year": 2025, "type": "EP"},
+-	{"artist": ["Cement Tea"], "name": "Operation: MINDBLOWN!", "year": 2025, "type": "Album"},
+-    {"artist": ["Blvck Hypertone","DF"], "name": "Quarantine Experiments Split", "year": 2020, "type": "Album"},
+-	{"artist": ["Blue Wind Echo"], "name": "Living A Quiet Life In The Dreamworld", "year": 2020, "type": "Single"},
++    {"artist": ["Cement Tea"], "name": "Movement Speed: Fast", "year": 2025, "type": "EP", "img": "./ressources/cover_test.jpg", "url": "https://cementtea.bandcamp.com/album/movement-speed-fast"},
++	{"artist": ["Cement Tea"], "name": "Operation: MINDBLOWN!", "year": 2025, "type": "Album", "url": "https://cementtea.bandcamp.com/album/operation-mindblown"},
++    {"artist": ["Blvck Hypertone","DF"], "name": "Quarantine Experiments Split", "year": 2020, "type": "Album", "url": "https://dfmusic23.bandcamp.com/album/exp-23-25-ft-blvck-hypertone-quarantine-experiments-df-esclusive"},
++	{"artist": ["Blue Wind Echo"], "name": "Living A Quiet Life In The Dreamworld", "year": 2020, "type": "Video", "url": "https://bluewindecho.bandcamp.com/track/living-a-quiet-life-in-the-dreamworld"},
+     {"artist": ["Zustand D."], "name": "Introduxia Dimensii Hypertone", "year": 2013, "type": "Single"},
+ 	{"artist": ["Exp_23:25"], "name": "Towards A Thousand Digits", "year": 2019, "type": "Album"},
+     {"artist": ["Blue Wind Echo"], "name": "2020", "year": 2020, "type": "Album"},
+-	{"artist": ["Exp_23:25","Kophedra"], "name": "Supernatural speed of my thoughts", "year": 2019, "type": "Single"},
+-	{"artist": ["Exp_23:25"], "name": "The Black Box Inside Of Me", "year": 2019, "type": "Single"},
++	{"artist": ["Exp_23:25","Kophedra"], "name": "Supernatural speed of my thoughts", "year": 2018, "type": "Track"},
++	{"artist": ["Exp_23:25"], "name": "The Black Box Inside Of Me", "year": 2019, "type": "Track"},
+ 	{"artist": ["Exp_23:25"], "name": "Over-Awareness", "year": 2019, "type": "EP"},
+-	{"artist": ["Johnny Violent"], "name": "Burn Out", "year": 1996, "type": "Single"},
+-	{"artist": ["tatsuyangu"], "name": "milky way galaxy", "year": 2021, "type": "Single"},
+-	{"artist": ["Kobaryo"], "name": "Singularity at 2.64e+6 BPM", "year": 2023, "type": "Single"}
++	{"artist": ["Johnny Violent"], "name": "Burn Out", "year": 1996, "type": "Track"},
++	{"artist": ["tatsuyangu"], "name": "milky way galaxy", "year": 2021, "type": "Video"},
++	{"artist": ["Kobaryo"], "name": "Singularity at 2.64e+6 BPM", "year": 2023, "type": "Track"},
++	{"artist": ["Darkblack XIII"], "name": "Going E+", "year": 2018, "type": "Album", "url":"https://dfmusic23.bandcamp.com/album/darkblack-xii-going-e"},
++	{"artist": ["Blue Wind Echo"], "name": "2019", "year": 2020, "type": "EP", "url":"https://bluewindecho.bandcamp.com/album/2019"},
++	{"artist": ["The Omniverse"], "name": "Giant Void in the Universe", "year": 2021, "type": "Video"},
++	{"artist": ["The Planets Align"], "name": "Noiziatrics", "year": 2021, "type": "Album","url":"https://noiziatrics.bandcamp.com/album/the-planets-align"},
++	{"artist": ["Exp_23:25"], "name": "Loss of Counsciousness IV", "year": 2019, "type": "Track"},
++	{"artist": ["IZEI n NOIZKILLER"], "name": "In the Depth of 2.88e+15", "year": 2023, "type": "Single","url":"https://izei.bandcamp.com/album/in-the-depth-of-288e-15"},
++	{"artist": ["Awakesy!"], "name": "When Will You Stop Breathing?", "year": 2023, "type": "Track","url":"https://awakesy.bandcamp.com/track/when-will-you-stop-breathing"}
++
+ ]
+diff --git a/notalibrary.js b/notalibrary.js
+index 0fb6d2d..0a18b85 100644
+--- a/notalibrary.js
++++ b/notalibrary.js
+@@ -1,27 +1,17 @@
+-const releases = [
+-    {artist: ["Cement Tea"], name: "Movement Speed: Slow", year: 2025, type: "EP"},
+-	{artist: ["Cement Tea"], name: "Operation: MINDBLOWN!", year: 2025, type: "Album"},
+-    {artist: ["Blvck Hypertone","DF"], name: "Quarantine Experiments Split", year: 2020, type: "Album"},
+-	{artist: ["Blue Wind Echo"], name: "Living A Quiet Life In The Dreamworld", year: 2020, type: "Single"},
+-    {artist: ["Zustand D."], name: "Introduxia Dimensii Hypertone", year: 2013, type: "Single"},
+-	{artist: ["Exp_23:25"], name: "Towards A Thousand Digits", year: 2019, type: "Album"},
+-    {artist: ["Blue Wind Echo"], name: "2020", year: 2020, type: "Album"},
+-	{artist: ["Exp_23:25","Kophedra"], name: "Supernatural speed of my thoughts", year: 2019, type: "Single"},
+-	{artist: ["Exp_23:25"], name: "The Black Box Inside Of Me", year: 2019, type: "Single"},
+-	{artist: ["Exp_23:25"], name: "Over-Awareness", year: 2019, type: "EP"},
+-	{artist: ["Johnny Violent"], name: "Burn Out", year: 1996, type: "Single"},
+-	{artist: ["tatsuyangu"], name: "milky way galaxy", year: 2021, type: "Single"},
+-	{artist: ["Kobaryo"], name: "Singularity at 2.64e+6 BPM", year: 2023, type: "Single"},
+-];
+-
++var releases =[];
+ const displayReleases = document.querySelector("#display-names");
+ const singles=document.querySelector("#singles");
+ const albums=document.querySelector("#albums");
+ const eps=document.querySelector("#eps");
+ function refresh(r){
+-let x = "<table><tr><th>Artist</th><th>Track</th><th>Year</th><th>Type</th></tr>"
++let x = "<table><tr><th style=\"padding:0px;\"></th><th>Artist</th><th>Track</th><th>Year</th><th>Type</th></tr>"
+ for (let i = 0; i < r.length; i++) {
+-    x += "<tr><td>"+r[i].artist+"</td><td>"+r[i].name+"</td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
++	src="./ressources/cover_test.jpg"
++	if(r[i].img){
++		src=r[i].img
++	}
++
++    x += "<tr><td style=\"padding:0px;\"><img src=\""+src+"\"style=\"width:128px;height:128px;margin-left:0px;\"></img></td><td>"+r[i].artist.join(", ")+"</td><td><a href=\""+r[i].url+"\">"+r[i].name+"</a></td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
+ }
+ displayReleases.innerHTML=x+"</table>"
+ //alert(displayReleases.innerHTML)
+@@ -39,7 +29,7 @@ function search(){
+ 	let k = [];
+ 	for(let i in releases)
+ 		if(fs(releases[i].artist.join(", "),s)||fs(releases[i].name,s)||fs(releases[i].year.toString(),s))
+-			if(releases[i].type=="EP"&&eps.checked||releases[i].type=="Album"&&albums.checked||releases[i].type=="Single"&&singles.checked) k.push(releases[i])
++			if(releases[i].type=="EP"&&eps.checked||releases[i].type=="Album"&&albums.checked||(releases[i].type=="Single"||releases[i].type=="Track"||releases[i].type=="Video")&&singles.checked) k.push(releases[i])
+ 	switch(document.getElementById("SORT").options[document.getElementById("SORT").selectedIndex].value){
+ 		case "TN":
+ 			k=k.sort((a,b)=>(a.name>b.name?1:-1))
+@@ -61,7 +51,10 @@ function search(){
+ 	refresh(k)
+ 
+ }
+-search()
++//search()
++fetch('./library.json')
++	.then(response=>response.json())
++	.then(json=>{releases=json;search()})
+ document.querySelector("#s1").addEventListener("input",search)
+ document.querySelector("#s1").addEventListener("input",search)
+ document.querySelector("#SORT").onchange = search
