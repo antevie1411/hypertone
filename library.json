@@ -1,0 +1,23 @@
+[
+    {"artist": ["Cement Tea"], "name": "Movement Speed: Fast", "year": 2025, "type": "EP", "img": "./ressources/cover_test.jpg", "url": "https://cementtea.bandcamp.com/album/movement-speed-fast"},
+	{"artist": ["Cement Tea"], "name": "Operation: MINDBLOWN!", "year": 2025, "type": "Album", "url": "https://cementtea.bandcamp.com/album/operation-mindblown"},
+    {"artist": ["Blvck Hypertone","DF"], "name": "Quarantine Experiments Split", "year": 2020, "type": "Album", "url": "https://dfmusic23.bandcamp.com/album/exp-23-25-ft-blvck-hypertone-quarantine-experiments-df-esclusive"},
+	{"artist": ["Blue Wind Echo"], "name": "Living A Quiet Life In The Dreamworld", "year": 2020, "type": "Video", "url": "https://bluewindecho.bandcamp.com/track/living-a-quiet-life-in-the-dreamworld"},
+    {"artist": ["Zustand D."], "name": "Introduxia Dimensii Hypertone", "year": 2013, "type": "Single"},
+	{"artist": ["Exp_23:25"], "name": "Towards A Thousand Digits", "year": 2019, "type": "Album"},
+    {"artist": ["Blue Wind Echo"], "name": "2020", "year": 2020, "type": "Album"},
+	{"artist": ["Exp_23:25","Kophedra"], "name": "Supernatural speed of my thoughts", "year": 2018, "type": "Track"},
+	{"artist": ["Exp_23:25"], "name": "The Black Box Inside Of Me", "year": 2019, "type": "Track"},
+	{"artist": ["Exp_23:25"], "name": "Over-Awareness", "year": 2019, "type": "EP"},
+	{"artist": ["Johnny Violent"], "name": "Burn Out", "year": 1996, "type": "Track"},
+	{"artist": ["tatsuyangu"], "name": "milky way galaxy", "year": 2021, "type": "Video"},
+	{"artist": ["Kobaryo"], "name": "Singularity at 2.64e+6 BPM", "year": 2023, "type": "Track"},
+	{"artist": ["Darkblack XIII"], "name": "Going E+", "year": 2018, "type": "Album", "url":"https://dfmusic23.bandcamp.com/album/darkblack-xii-going-e"},
+	{"artist": ["Blue Wind Echo"], "name": "2019", "year": 2020, "type": "EP", "url":"https://bluewindecho.bandcamp.com/album/2019"},
+	{"artist": ["The Omniverse"], "name": "Giant Void in the Universe", "year": 2021, "type": "Video"},
+	{"artist": ["The Planets Align"], "name": "Noiziatrics", "year": 2021, "type": "Album","url":"https://noiziatrics.bandcamp.com/album/the-planets-align"},
+	{"artist": ["Exp_23:25"], "name": "Loss of Counsciousness IV", "year": 2019, "type": "Track"},
+	{"artist": ["IZEI n NOIZKILLER"], "name": "In the Depth of 2.88e+15", "year": 2023, "type": "Single","url":"https://izei.bandcamp.com/album/in-the-depth-of-288e-15"},
+	{"artist": ["Awakesy!"], "name": "When Will You Stop Breathing?", "year": 2023, "type": "Track","url":"https://awakesy.bandcamp.com/track/when-will-you-stop-breathing"}
+
+]
