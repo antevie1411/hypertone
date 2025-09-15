@@ -11,7 +11,7 @@ for (let i = 0; i < r.length; i++) {
 		src=r[i].img
 	}
 
-    x += "<tr><td style=\"padding:0px;\"><img src=\""+src+"\"style=\"width:128px;height:128px;margin-left:0px;\"></img></td><td>"+r[i].artist.join(", ")+"</td><td><a href=\""+r[i].url+"\">"+r[i].name+"</a></td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
+    x += "<tr><td style=\"padding:20px;\"><img src=\""+src+"\"style=\"width:128px;height:128px;margin-left:0px;\"></img></td><td>"+r[i].artist.join(", ")+"</td><td><a href=\""+r[i].url+"\">"+r[i].name+"</a></td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
 }
 displayReleases.innerHTML=x+"</table>"
 //alert(displayReleases.innerHTML)
