@@ -176,8 +176,8 @@ p {
   width: 400px;
   margin: auto;
   display: block;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 42px;
+  margin-bottom: 0px;
   padding: 0px;
   border-width: 2px;
   border-color: white;
@@ -187,6 +187,14 @@ p {
 .titre_release {
   font-family: 'Courier New', Courier, monospace; 
   font-size: 22px;
+  font-weight: bolder;
+  color:grey;
+  text-decoration: none
+}
+
+.titre_release_article {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 32px;
   font-weight: bolder;
   color:grey;
   text-decoration: none
