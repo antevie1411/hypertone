@@ -10,8 +10,6 @@ for (let i = 0; i < r.length; i++) {
 	if(r[i].img){
 		src=r[i].img
 	}
-
-css_mods_batch01
     x += "<tr><td style=\"padding:16px;width:16%;\"><img src=\""+src+"\"style=\"width:96px;height:96px;margin-left:0px;\"></img></td><td>"+r[i].artist.join(", ")+"</td><td><a href=\""+r[i].url+"\">"+r[i].name+"</a></td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
 
 }
