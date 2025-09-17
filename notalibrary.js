@@ -4,14 +4,16 @@ const singles=document.querySelector("#singles");
 const albums=document.querySelector("#albums");
 const eps=document.querySelector("#eps");
 function refresh(r){
-let x = "<table><tr><th style=\"padding:0px;\"></th><th>Artist</th><th>Track</th><th>Year</th><th>Type</th></tr>"
+let x = "<table><tr><th style=\"padding:0px;\">Cover Art</th><th>Artist</th><th>Track</th><th>Year</th><th>Type</th></tr>"
 for (let i = 0; i < r.length; i++) {
 	src="./ressources/cover_test.jpg"
 	if(r[i].img){
 		src=r[i].img
 	}
 
-    x += "<tr><td style=\"padding:20px;\"><img src=\""+src+"\"style=\"width:128px;height:128px;margin-left:0px;\"></img></td><td>"+r[i].artist.join(", ")+"</td><td><a href=\""+r[i].url+"\">"+r[i].name+"</a></td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
+css_mods_batch01
+    x += "<tr><td style=\"padding:16px;width:16%;\"><img src=\""+src+"\"style=\"width:96px;height:96px;margin-left:0px;\"></img></td><td>"+r[i].artist.join(", ")+"</td><td><a href=\""+r[i].url+"\">"+r[i].name+"</a></td><td>"+r[i].year+"</td><td>"+r[i].type+"</td></tr>";
+
 }
 displayReleases.innerHTML=x+"</table>"
 //alert(displayReleases.innerHTML)
